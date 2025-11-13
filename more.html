@@ -1,11 +1,15 @@
 <head>
     <title>mObywatel</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/more.css">
-    <link rel="stylesheet" href="assets/main.css">
-    <link rel="icon" type="image/x-icon" href="images/otM5jOA.png">
-    <link rel="apple-touch-icon" href="images/otM5jOA.png">
-    <link rel="shortcut icon" href="images/otM5jOA.png">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="assets/app/main.css">
+    <link rel="stylesheet" href="assets/app/more.css">
+    <link rel="stylesheet" href="assets/app/flow.css">
+    <link rel="icon" type="image/x-icon" href="assets/app/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/app/images/logo.png">
+    <link rel="shortcut icon" href="assets/app/images/logo.png">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
@@ -14,10 +18,6 @@
 
     <div class="bottom_bar">
         <div class="bottom_bar_grid">
-            <div class="bottom_element_grid" send="home">
-                <div class="bottom_element_image home"></div>
-                <p class="bottom_element_text">Pulpit</p>
-            </div>
             <div class="bottom_element_grid" send="documents">
                 <div class="bottom_element_image documents"></div>
                 <p class="bottom_element_text">Dokumenty</p>
@@ -37,57 +37,96 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="top_slide_bar">
+        <img class="main_page_logo" src="assets/app/images/logo_large.png">
         <p class="main_title">Więcej</p>
-        <p class="title">Ustawienia</p>
+        <p class="main_button" onclick="sendTo('id')">Wyloguj się</p>
+    </div>
+    <div class="container">
+        <p class="title settings">Twoje dane</p>
         <div class="services_list">
             <div class="service">
-                <img class="service_icon" src="images/zmienhaslo.png">
+                <img class="service_icon" src="assets/app/images/house.png">
+                <p class="service_name">Dane zameldowania</p>
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
+            </div>
+            <div class="service">
+                <img class="service_icon" src="assets/app/images/passport.png">
+                <p class="service_name">Dane paszportu</p>
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
+            </div>
+        </div>
+        <p class="title">Twoje dane</p>
+        <div class="services_list">
+            <div class="service">
+                <img class="service_icon" src="assets/app/images/key.png">
                 <p class="service_name">Zmień hasło</p>
-                <img class="arrow" src="images/1GUMnTn.png">
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
             </div>
             <div class="service">
-                <img class="service_icon" src="images/logowanie.png">
+                <img class="service_icon" src="assets/app/images/face.png">
                 <p class="service_name">Logowanie biometryczne</p>
-                <img class="arrow" src="images/1GUMnTn.png">
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
             </div>
             <div class="service">
-                <img class="service_icon" src="images/gTMa9Dw.png">
+                <img class="service_icon" src="assets/app/images/bell_gray.png">
                 <p class="service_name">Powiadomienia</p>
-                <img class="arrow" src="images/1GUMnTn.png">
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
             </div>
             <div class="service">
-                <img class="service_icon" src="images/jezykaplikacji.png">
+                <img class="service_icon" src="assets/app/images/appearance.png">
+                <p class="service_name">Wygląd</p>
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
+            </div>
+            <div class="service">
+                <img class="service_icon" src="assets/app/images/language.png">
                 <p class="service_name">Język aplikacji</p>
-                <img class="arrow" src="images/1GUMnTn.png">
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
             </div>
-            <div class="service">
-                <img class="service_icon" src="images/wydanecertyfikaty.png">
+            <div class="service" style="border: none;">
+                <img class="service_icon" src="assets/app/images/certificates.png">
                 <p class="service_name">Wydane certyfikaty</p>
-                <img class="arrow" src="images/1GUMnTn.png">
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
             </div>
         </div>
         <p class="title">Pozostałe</p>
         <div class="services_list" style="margin-bottom: 150px;"  style="margin-bottom: 150px;">
             <div class="service">
-                <img class="service_icon" src="images/historiaaktywnosci.png">
+                <img class="service_icon" src="assets/app/images/clock.png">
                 <p class="service_name">Historia aktywności</p>
-                <img class="arrow" src="images/1GUMnTn.png">
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
             </div>
             <div class="service">
-                <img class="service_icon" src="images/SKRJAO0.png">
-                <p class="service_name">Informacje prawne</p>
-                <img class="arrow" src="images/1GUMnTn.png">
+                <img class="service_icon" src="assets/app/images/info.png">
+                <p class="service_name">O aplikacji</p>
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
             </div>
-            <div class="service" style="border: none;">
-                <img class="service_icon" src="images/pomoctechniczna.png">
+            <div class="service">
+                <img class="service_icon" src="assets/app/images/help_gray.png">
                 <p class="service_name">Pomoc techniczna</p>
-                <img class="arrow" src="images/1GUMnTn.png">
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
+            </div>
+            <div class="service">
+                <img class="service_icon" src="assets/app/images/star.png">
+                <p class="service_name">Oceń aplikację</p>
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
+            </div>
+            <div class="service">
+                <img class="service_icon" src="assets/app/images/idea.png">
+                <p class="service_name">Zagłosuj na pomysł</p>
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
+            </div>
+            <div class="service">
+                <img class="service_icon" src="assets/app/images/phone.png">
+                <p class="service_name">Dezaktywuj aplikację</p>
+                <img class="arrow" src="assets/app/images/right_arrow_sharp.png">
             </div>
         </div>
     </div>
     </div>
 
-    <script src="assets/bar.js"></script>
-    <script src="assets/manifest.js"></script>
+    <script src="assets/app/bar.js"></script>
+    <script src="assets/app/manifest.js"></script>
+    <script src="assets/cache.js"></script>
+    <script src="assets/app/flow.js"></script>
 </body>
